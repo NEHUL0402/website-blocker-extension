@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Website Blocker</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to bottom right, #f3f4f6, #dbeafe);
+        padding: 15px;
+        width: 270px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      h3 {
+        margin-top: 0;
+        color: #1e40af;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      button {
+        width: 100%;
+        padding: 8px;
+        background-color: #1e40af;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #1c3faa;
+      }
+
+      h4 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+        color: #374151;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        max-height: 150px;
+        overflow-y: auto;
+      }
+
+      li {
+        margin-bottom: 6px;
+        background-color: #ffffff;
+        border: 1px solid #e5e7eb;
+        padding: 6px 10px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .delBtn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        color: #ef4444;
+        padding: 2px;
+        transition: transform 0.2s ease;
+      }
+
+      .delBtn:hover {
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>🛑 Website Blocker</h3>
+    <input id="siteInput" placeholder="example.com" />
+    <button id="addBtn">Add</button>
+
+    <h4>Blocked Sites:</h4>
+    <ul id="siteList"></ul>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

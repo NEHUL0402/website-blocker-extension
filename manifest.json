@@ -1,0 +1,15 @@
+{
+  "name": "Website Blocker",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Blocks websites using declarativeNetRequest and user-defined input.",
+  "permissions": ["declarativeNetRequest", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.webp"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
